@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="@string/app_name" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_margin="16dp">
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/lbl_item_name"
+                    style="@style/List"
+                    android:text="Name:" />
+
+                <TextView
+                    android:id="@+id/lbl_user_name"
+                    style="@style/List"
+                    android:paddingLeft="8dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/lbl_item_sex"
+                    style="@style/List"
+                    android:text="Sex:" />
+
+                <TextView
+                    android:id="@+id/lbl_user_sex"
+                    style="@style/List"
+                    android:paddingLeft="8dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/lbl_item_dob"
+                    style="@style/List"
+                    android:text="DOB:" />
+
+                <TextView
+                    android:id="@+id/lbl_user_dob"
+                    style="@style/List"
+                    android:paddingLeft="8dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/lbl_item_height"
+                    style="@style/List"
+                    android:text="Height:" />
+
+                <TextView
+                    android:id="@+id/lbl_user_height"
+                    style="@style/List"
+                    android:paddingLeft="8dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/lbl_item_weight"
+                    style="@style/List"
+                    android:text="Weight:" />
+
+                <TextView
+                    android:id="@+id/lbl_user_weight"
+                    style="@style/List"
+                    android:paddingLeft="8dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    style="@style/List"
+                    android:onClick="gotoInput"
+                    android:text="edit" />
+
+                <View />
+            </TableRow>
+
+            <TextView
+                android:id="@+id/note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Simple persistent data passing using SharedPreferences." />
+
+        </TableLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

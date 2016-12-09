@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Persistant Data Passing</string>
+    <string-array name="sex">
+        <item>Sex</item>
+        <item>male</item>
+        <item>female</item>
+    </string-array>
+</resources>
